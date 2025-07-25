@@ -1,0 +1,2 @@
+# Check Ansible health every hour and log results
+0 * * * * /opt/ansible/health-check.sh >> /var/log/ansible/health.log 2>&1

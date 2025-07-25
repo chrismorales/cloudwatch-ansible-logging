@@ -1,0 +1,5 @@
+# Run Ansible playbook daily at 2 AM
+0 2 * * * /opt/ansible/run-playbook.sh /path/to/your/playbook.yml
+
+# Optional: Run log cleanup weekly
+0 3 * * 0 find /var/log/ansible -name "*.log" -mtime +30 -delete
